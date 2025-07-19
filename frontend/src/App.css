@@ -1,0 +1,114 @@
+/* Root Layout */
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, #002244 50%, #c5a100 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #002244;
+}
+
+/* App Container with White Card Feel */
+.app-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+  color: #002244;
+  font-size: 2rem;
+  border-bottom: 2px solid #c5a100;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Risk Section */
+.risk-selection {
+  margin-bottom: 2rem;
+}
+
+.risk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  border-left: 4px solid #c5a100;
+}
+
+/* Risk Label */
+.risk-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+.risk-list label:hover {
+  background-color: #f2f4f7;
+}
+
+.risk-list input[type="checkbox"] {
+  transform: scale(1.4);
+  accent-color: #002244;
+  cursor: pointer;
+}
+
+/* Button Styling */
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #002244;
+  color: #fff8e1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Simulation Result Cards */
+.results {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.risk-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.risk-card h3 {
+  color: #002244;
+  margin-bottom: 0.5rem;
+}
+
+.risk-card img {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
